@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW Home Page</title>
+    <link rel="Stylesheet" href=styles.css> 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar">
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <div class="nav-left" id="nav-links">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutUs.html">About Us</a></li>
+            <li><a href="./ourEngines.html">Models</a></li>
+            <li><a href="./eventsAndNews.html" class="active">Events And News</a></li>
+            <li><a href="./helpCenter.html">Help Center</a></li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <span class="nav-logo-text">Sheer Driving Pleasure |</span>
+          <a href="./index.html"><img src="./web images/BMW 2020 New.svg" alt="BMW Logo" class="nav-logo"></a>
+        </div>
+      </nav>
+     <div class="title-section">
+    <div class="title">Latest Events</div>
+     </div>
+    <div class="event-carousel-wrapper">
+         <button class="event-nav-button prev" id="prevBtn">&#8249;</button>
+        <div class="event-carousel" id="carousel">
+             <div class="event-item"><img src="./web images/brochure 1.webp" alt="Event 1"></div>
+            <div class="event-item"><img src="./web images/brochure 2.jfif" alt="Event 2"></div>
+            <div class="event-item"><img src="./web images/brochure 3.jfif" alt="Event 3"></div>
+            <div class="event-item"><img src="./web images/brochure 4.jfif" alt="Event 4"></div>
+            <div class="event-item"><img src="./web images/brochure 5.jfif" alt="Event 5"></div>
+        </div>
+        <button class="event-nav-button next" id="nextBtn">&#8250;</button>
+    </div>
+     <br>
+    
+     <div class="title">Latest News</div>
+     <div class="news-section">
+        <div class="news-item">
+            <img src="./web images/news 1.webp" alt="News 1">
+            <p>The New BMW <span style="color: rgb(71, 28, 111); font-size: 20px; font-style: italic;">///Kith technology </span>comming up in 2025.</p>
+            <a href="#" class="read-more-btn">Learn More</a>
+        </div>
+        <div class="news-item">
+            <img src="./web images/news 2.jpg" alt="News 2">
+            <p>Upcoming BMW car launch this fall.</p>
+            <a href="#" class="read-more-btn">Learn More</a>
+        </div>
+        <div class="news-item">
+            <img src="./web images/news 3.webp" alt="News 3">
+            <p>BMW drives innovation with new tech.</p>
+            <a href="#" class="read-more-btn">Learn More</a>
+        </div>
+    </div>
+    <div class="news-section">
+        <div class="news-item">
+            <img src="./web images/news 4.avif" alt="News 4">
+            <p>BMW CEO Oliver Zipse: Neue Klasse pushes automaker ‘higher than ever before’</p>
+            <a href="#" class="read-more-btn">Learn More</a>
+        </div>
+        <div class="news-item">
+            <img src="./web images/news 5.jpg" alt="News 5">
+            <p>BMW Group Plant Regensburg sets new record, with 100,000 fully-electric vehicles produced in 2024.</p>
+            <a href="#" class="read-more-btn">Learn More</a>
+        </div>
+        <div class="news-item">
+            <img src="./web images/news 6.webp" alt="News 6">
+            <p>BMW opens World’s largest vertical acoustic wind tunnel at Munich research center.</p>
+            <a href="#" class="read-more-btn">Learn More</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-column translate-section">
+            <span>Translate: </span>
+            <button id="translate-en">English</button>
+            <button id="translate-de">Deutsch</button>
+        </div>
+        <div class="footer-column">
+            <img src="./web images/BMW 2020 New.svg" alt="BMW Logo" height="40">
+        </div>
+        <div class="footer-column social-media-links">
+            <a href="#" id="facebook-link">Facebook</a>
+            <a href="#" id="twitter-link">Twitter</a>
+            <a href="#" id="instagram-link">Instagram</a>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+    
+</body>
+</html>

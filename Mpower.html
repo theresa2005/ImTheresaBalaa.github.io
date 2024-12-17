@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href=styles.css> 
+    <title>///M Power</title>
+
+</head>
+<body>
+    <div class="animated-body">
+    <nav class="navbar">
+    <i class='bx bx-menu' id="menu-icon"></i>
+    <div class="nav-left" id="nav-links">
+      <ul>
+        <li><a href="./index.html" class="active">Home</a></li>
+        <li><a href="./aboutUs.html">About Us</a></li>
+        <li><a href="./ourEngines.html">Models</a></li>
+        <li><a href="./eventsAndNews.html">Events And News</a></li>
+        <li><a href="./helpCenter.html">Help Center</a></li>
+      </ul>
+    </div>
+    <div class="nav-right">
+      <span class="nav-logo-text">Sheer Driving Pleasure |</span>
+      <a href="./index.html"><img src="./web images/BMW M logo.svg" alt="BMW Logo" class="nav-logo"></a>
+    </div>
+  </nav>
+    <div class="m-container">
+        <div class="stripe blue"></div>
+        <div class="stripe red"></div>
+        <div class="stripe aqua"></div>
+    </div>
+
+    <div class="home-content">
+      <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to the Ultimate <span style="font-style: italic; font-weight: bold;">///M</span> Experience</h1>
+            <br>
+            <a href="#services" class="btn">Get Started</a>
+        </div>
+     </section>
+
+     <section id="services" class="services">
+        <div id="service-box1">
+            <h2>Performance Update</h2>
+            <p>Unleash the full potential of your ///M engine with precision upgrades.</p>
+            <a href="./ourEngines.html" class="shop-btn">SHOP NOW</a>
+        </div>
+        <div id="service-box2">
+            <h2>Custom Tuning</h2>
+            <p>Tailor your driving experience with advanced tuning solutions.</p>
+            <a href="./ourEngines.html" class="shop-btn">SHOP NOW</a>
+        </div>
+        <div id="service-box3">
+            <h2>Track-Ready Services</h2>
+            <p>Prepare your ///M for the track with specialized services.</p>
+            <a href="./ourEngines.html" class="shop-btn">SHOP NOW</a>
+        </div>
+     </section>
+    
+
+     <div class="footer">
+        <div class="footer-column translate-section">
+            <span>Translate: </span>
+            <button id="translate-en">English</button>
+            <button id="translate-de">Deutsch</button>
+        </div>
+        <div class="footer-column">
+            <img src="./web images/BMW 2020 New.svg" alt="BMW Logo" height="40">
+        </div>
+        <div class="footer-column social-media-links">
+            <a href="#" id="facebook-link">Facebook</a>
+            <a href="#" id="twitter-link">Twitter</a>
+            <a href="#" id="instagram-link">Instagram</a>
+        </div>
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        setTimeout(() => {
+            document.querySelector('.home-content').style.display = 'block';
+        }, 3000);
+        document.querySelector('.btn').addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector('#services').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
